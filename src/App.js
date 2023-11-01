@@ -1,7 +1,8 @@
 import './App.css';
-import Nav from './Nav';
+import Nav from './components/Nav';
 // It enables the routing and links in app
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/logout' element={<h1>Logout Component</h1>}></Route>
           <Route path='/profile' element={<h1>Profile Component Component</h1>}></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
 
     </div>
